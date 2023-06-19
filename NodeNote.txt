@@ -1,0 +1,58 @@
+
+                        Node : Runtime Environment + Js Library  / Backend Technology
+                    
+                    - Create Client-server Application
+                    - Feature
+                        - Extremely Fast
+                        - Asynchronous and event driven
+                        - Single threaded
+                        - Highly Scalable
+                        - NO Buffering
+                        - open source
+                    - Node js Parts
+                        - Global Object : setTimeOut(), console.log()
+                        - Modules : required('file')   
+                            - Bulit in :
+                                - fs
+                                - path 
+                                - process : environmental variable
+                                - http
+                                - https
+                                - events 
+                                - crypto
+                            - Userdefined : using module.exports for exporting and require for importing
+                        - Packages : npm i package-name
+                            - package.json : npm init
+                            - node_modules 
+                            - package-lock.json
+                    - Node Backend Concepts
+                        - Client-Server Architecture
+                            - Server side
+                            - http
+                        - API
+                        - crud
+                        - RESTful API
+                        -json
+                        - CORS : Cross Origin Resource Sharing
+                    - Express : Framework of NodeJs
+                        - Feature
+                            - Fast, minimalist
+                        - Packages
+                            - express
+                            - cors
+                            - dotenv
+                            - mongoose
+                    - mongoose : elegant mongodb Object modeling for node.js
+                    - Middleware : is a function used to control request-response cycle
+                        - to create a Middleware
+                            - function name (req,res,next){}{Userdefined]
+
+                        - Types of Middleware
+                            - Application Specific Middleware : works for all request
+                                 eg: express.json() {predfined]
+                            - Router Specific Middleware : works in specific routes
+                    - Autorization : using jsonwebtoken
+                        - install jsonwebtoken : npm i jsonwebtoken
+                        - using jsonwebtoken , generate token in controller
+                            - generate token : using sign(payload, secret)
+                            - verify token in Router Specific Middleware : verify(payload, secret)
